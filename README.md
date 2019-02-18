@@ -1,4 +1,4 @@
-<img src="image.jpg" align="center">
+<img src="image.png" align="center">
 # Overwatch League API V2 Documentation (Unofficial)
 An unofficial analysis of the Overwatch League API V2
 
