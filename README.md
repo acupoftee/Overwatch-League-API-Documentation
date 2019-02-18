@@ -11,10 +11,10 @@ The Overwatch League API is not officially supported by Blizzard, and is subject
 # Getting Started
 The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence. This API enables developers to have real time information about teams, players, match updates, and much more!
 
-## The API is a RESTful Resource
+### The API is a RESTful Resource
 Overwatch League API endpoints conform to the design principles of Representational State Transfer (REST). This API uses the JSON data format for responses.
 
-## The API is HTTP-based (over SSL)
+### The API is HTTP-based over SSL
 A GET request is required to retrieve data from the Overwatch League API.
 Methods that submit, change or destroy data require a POST. A DELETE request is also accepted for methods that destroy data. API methods that require a particular HTTP method will return an error if not invoked using the correct endpoint or style. 
 
