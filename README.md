@@ -1,3 +1,4 @@
+<img src="logo-tracer.png" align="center>
 # Overwatch League API V2 Documentation (Unofficial)
 An unofficial analysis of the Overwatch League API V2
 
