@@ -10,3 +10,8 @@ An unofficial analysis of the Overwatch League API V2
 | Florida Mayhem   | 4407 |
 | Guangzhou Charge | 7699 |
 | Hangzhou Spark   | 7693 |
+
+
+| Team Logo                                                                                  |
+|:------------------------------------------------------------------------------------------:|
+|[logo](https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg)|
