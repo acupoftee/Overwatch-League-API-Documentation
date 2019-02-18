@@ -2,7 +2,7 @@
 An unofficial analysis of the Overwatch League API V2
 
 | Team             | ID   |
-|:----------------:|:----:|
+|:---------------- |:----:|
 | Atlanta Reign    | 7698 |
 | Boston Uprising  | 4402 |
 | Chengdu Hunters  | 7692 | 
