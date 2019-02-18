@@ -3,7 +3,7 @@ An unofficial analysis of the Overwatch League API V2
 
 | Team             | ID   |
 |:---------------- |:----:|
-| <a href="url"><img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/32/32MTX0PLEDY31542673991836.png" height="20"></a> Atlanta Reign    | 7698 |
+| <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/32/32MTX0PLEDY31542673991836.png" height="20">Atlanta Reign    | 7698 |
 | Boston Uprising  | 4402 |
 | Chengdu Hunters  | 7692 | 
 |<a href="url"><img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png" height="20"></a> Dallas Fuel      | 4523 |
