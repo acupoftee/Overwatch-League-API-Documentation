@@ -2,8 +2,11 @@
 <img src="image.png">
   </p>
 
-# Overwatch League API V2 Documentation (Unofficial)
+# Overwatch League API Documentation 
 An unofficial analysis of the Overwatch League API V2
+
+# Disclaimer
+The Overwatch League API is not officially supported by Blizzard, and is subject to change at any time. The documentation for the API has been developed by the community, and may or may not be complete. Keep this in mind before relying on this for a production app.
 
 | Team                   | ID   |
 |:---------------------- |:----:|
