@@ -1,4 +1,4 @@
-# Unofficial Overwatch League API V2 Documentation
+# Overwatch League API V2 Documentation (Unofficial)
 An unofficial analysis of the Overwatch League API V2
 
 | Team                   | ID   |
