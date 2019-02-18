@@ -14,4 +14,4 @@ An unofficial analysis of the Overwatch League API V2
 
 | Team Logo    |
 |:------------:|
-|![logo](https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg)|
+|<img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png" height="20" width="20>|
