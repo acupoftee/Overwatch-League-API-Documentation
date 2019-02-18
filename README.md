@@ -9,7 +9,7 @@ An unofficial analysis of the Overwatch League API V2
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png" height="20"> Dallas Fuel | 4523 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/4GO273NATVWM1508792362854.png" height="20"> Florida Mayhem   | 4407 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/sz/SZQVDGE3F1TE1542674048320.png" height="20"> Guangzhou Charge | 7699 |
-| <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/TJ9I5I8BFC5J1542674380020.png" height="20"> Hangzhou Spark   | 7693 |
+| <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/QW4QD06XJUZY1544055635729.png" height="20"> Hangzhou Spark   | 7693 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/2YF5VLIMGZVA1546557680222.png" height="20"> Houston Outlaws | 4525 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/NW461AQIYQMK1508792363133.png" height="20"> London Spitfire | 4410 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/3AEMOZZL76PF1508792362892.PNG" height="20"> Los Angeles Gladiators | 4406 |
