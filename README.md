@@ -1,5 +1,5 @@
 <p align=center>
-<img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg">
+<img src="tracer.png", style="transform: scale(0.8)">
   </p>
 
  <h1 align=center> Overwatch League API Documentation </h1>
