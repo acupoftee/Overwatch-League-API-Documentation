@@ -1,5 +1,5 @@
 <p align=center>
-<img src="tracer.png", style="transform: scale(0.8)">
+<img src="tracer.png", style="transform: scale(0.7)">
   </p>
 
  <h1 align=center> Overwatch League API Documentation </h1>
