@@ -182,6 +182,8 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 | `owl_division` | Array of Division Object | The Divisions making up the Overwatch League. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 
 ### GET /v2/teams/{id}
-Returns information for a specific Overwatch League Team given a [Team ID](#team-ids). For exmaple, to retrieve information about Boston Uprising, we can add the id for Boston Uprising at the end of the path:
+Returns information for a single Overwatch League Team given a [Team ID](#team-ids). For exmaple, to retrieve information about Boston Uprising we can add Boston Uprising's ID at the end of the URL:
 
 `https://api.overwatchleague.com/v2/teams/4402`
+### Teams Data Dictionary 
+Below you'll find the data dictionary for a Team request. Some JSON examples will be omitted and covered in depth in later sections.
