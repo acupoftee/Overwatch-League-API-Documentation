@@ -80,7 +80,7 @@ Reponses can be returned in several locales (a language and region identidier). 
   * `zh_CH` - Chinese (China)
     * It is recommended to use the root URL for China listed above.
 # API Endpoint Guides
-Here this guide will go over in detail each use of the above endpoints/
+Here this guide will go over in detail each use of the above endpoints.
 
 ## Authentication Endpoints
 The following endpoints involve authenticating a Battle.net account, and authorizatino code use: 
@@ -171,8 +171,8 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-|`id`                   | Int64 | The integer representation of the unique identifier for this League season. Example: <br><br><pre lang="json">"id": 61</pre>
-|`availableLanguages`   |Array of String| Indicates a list of country and language codes. Example:<br><br><pre lang="json">"availableLanguages": ["en", "en-gb", "es-mx", "es-es", "pt", "de", "fr", "it", "pl", "ru", "ja", "ko", "zh-tw", "zh-cn"]</pre><i style="color: gray">Languages: Engish, English (Great Britian), Spanish (Mexico), Spanish (Spain), Portuguese, German, French, Italian, Polish, Russian, Japanese, Korean, Chinese (Taiwan), Chinease (China)<br><br>
+|`id`                   | Int64 | The unique integer for this League season. Example: <br><br><pre lang="json">"id": 61</pre>
+|`availableLanguages`   |Array of String| Indicates a list of country and language codes. Example:<br><br><pre lang="json">"availableLanguages": ["en", "en-gb", "es-mx", "es-es", "pt", "de", "fr", "it", "pl", "ru", "ja", "ko", "zh-tw", "zh-cn"]</pre><i>Languages: Engish, English (Great Britian), Spanish (Mexico), Spanish (Spain), Portuguese, German, French, Italian, Polish, Russian, Japanese, Korean, Chinese (Taiwan), Chinease (China)</i><br><br>
 |`name`               |  String| The name of the League. Example:<br><br><pre lang="json">"name": "The Overwatch League"</pre>
 |`description`         | String | A summary of the Overwatch League. Example: <br><br><pre lang="json">"description": "The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence."</pre>
 |`competitors`          | Array of [Competitor](objects/Competitor.md) Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
@@ -185,5 +185,10 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 Returns information for a single Overwatch League Team given a [Team ID](#team-ids). For exmaple, to retrieve information about Boston Uprising we can add Boston Uprising's ID at the end of the URL:
 
 `https://api.overwatchleague.com/v2/teams/4402`
-### Teams Data Dictionary 
+### Team Data Dictionary 
 Below you'll find the data dictionary for a Team request. Some JSON examples will be omitted and covered in depth in later sections.
+
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`id`                   | Int64 | The unique integer identifier for the Overwatch League Team. Example: <br><br><pre lang="json">"id": 4523</pre>
+|`divisionId` | Int64 | The unique integer identifier for the Team's Overwatch League [Division](objects/Division.md). Example:<br><br><pre lang="json">
