@@ -130,7 +130,7 @@ Deletes a favorite team from a User.
 ## Team Endpoints
 The following endpoints retrieve information for Overwatch League Teams. 
 
-### Team IDs
+### <a name="team-ids">Team IDs</a>
 Each Overwatch League Team has a unique integer identifier (ID) which can be found upon visiting each team page on https://overwatchleague.com. For example, at the end of this URL is the ID for [Atlanta Reign](https://overwatchleague.com/en-us/teams/7698):
 
 `https://overwatchleague.com/en-us/teams/7698`
@@ -138,33 +138,6 @@ Each Overwatch League Team has a unique integer identifier (ID) which can be fou
 We see that Atlanta Reign's ID following `/teams/` is `7698`. We can use this to retrieve information about Atlanta Reign's players, statistics, and more.
 
 Below is a table of all team IDs for retrieving information for specific teams: 
-<!-- GET /login</br>
-GET /auth/bnet/callback?code={code}</br>
-GET /user</br>
-GET /user/favorites</br>
-GET /v2/teams</br>
-GET /v2/teams/{id}</br>
-GET /ranking</br>
-GET /standings</br>
-GET /players</br>
-GET /players/{id}</br>
-GET /matches</br>
-GET /matches/{id}</br>
-GET /live-match</br>
-GET /schedule</br>
-GET /streams</br>
-GET /vods</br>
-GET /maps</br>
-GET /news</br>
-GET /playlist/owl-app-playlist</br>
-GET /about
-
-POST /user/favorites</br>
-POST /user/favorites/order
-
-DELETE /user/favorites/{id}  -->
-
-
 
 | Team                   | ID   |
 |:---------------------- |:-----|
@@ -202,8 +175,11 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 |`availableLanguages`   |Array of String| Indicates a list of country and language codes. Example:<br><br><pre lang="json">"availableLanguages": ["en", "en-gb", "es-mx", "es-es", "pt", "de", "fr", "it", "pl", "ru", "ja", "ko", "zh-tw", "zh-cn"]</pre><i style="color: gray">Languages: Engish, English (Great Britian), Spanish (Mexico), Spanish (Spain), Portuguese, German, French, Italian, Polish, Russian, Japanese, Korean, Chinese (Taiwan), Chinease (China)<br><br>
 |`name`               |  String| The name of the League. Example:<br><br><pre lang="json">"name": "The Overwatch League"</pre>
 |`description`         | String | A summary of the Overwatch League. Example: <br><br><pre lang="json">"description": "The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence."</pre>
-|`competitors`          | Array of Competitor Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. 
+|`competitors`          | Array of Competitor Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
 |`game`                 | String | The String representation of the game being played. Example: <br><br><pre lang="json">"game": "OVERWATCH"</pre> |
 |`logo`  | String | A URL leading to the Overwatch League Logo. Example: <br><br><pre lang="json">"logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg"</pre>
 |`competitorType` | String| Describes the type of Competitors competing in the Overwatch League. Example:<br><br><pre lang="json">"competitorType": "TEAM"</pre>
 | `owl_division` | Array of Division Object | The Divisions making up the Overwatch League. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]
+
+### GET /v2/teams/{id}
+Returns information for a specific Overwatch League Team given a [Team ID](#team-ids)
