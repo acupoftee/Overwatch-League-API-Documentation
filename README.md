@@ -203,3 +203,6 @@ Below you'll find the data dictionary for a Team request. Some JSON examples wil
 |`placement` | Int64 | The current standing of an Overwatch League Team. Example: <br><br><pre lang="json">"placement": 1</pre>
 |`advantage` | Int64 | An integer indicating the advantage an Overwatch League Team has over its competitors. Example: <br><br><pre lang="json">"advantage": 0</pre>
 | `records` | [Records](objects/Records.md) Object | A Records object containing an Overwatch League team's league records. See Records object for more info.|
+
+### GET /ranking
+Returns current rankings of all competing Overwatch League teams.
