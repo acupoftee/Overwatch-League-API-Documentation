@@ -208,12 +208,28 @@ Below you'll find the data dictionary for a Team request. Some JSON examples wil
 Returns an Array of Competitors ordered by placement in the Overwatch League.
 
 ### Ranking Data Dictionary 
-Below you'll find the data dictionary for a R anking request. Some JSON examples will be omitted and covered in depth in later sections.
+Below you'll find the data dictionary for a Ranking request. Some JSON examples will be omitted and covered in depth in later sections.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 | `content`           | Array of [Competitor](Objects/Competitor.md) Object| An Array of Competitors competing in the current Overwatch League Season
-| `comparisons`| Array of String| An Array containing the differentials used to rank all Overwatch League Competitors. Example:<br><br><pre lang="json">"comparisons": [<br>&emsp;&emsp;"MATCH_DIFFERENTIAL",<br>&emsp;&emsp;"MATCH_GAME_DIFFERENTIAL",<br>&emsp;&emsp;"GAME_HEAD_TO_HEAD_DIFFERENTIAL", <br>&emsp;&emsp;"MATCH_HEAD_TO_HEAD_DIFFERENTIAL", <br>&emsp;&emsp;"ADVANTAGE"<br>]</pre>|
+| `comparisons`| Array of String| An Array containing the differentials used to rank all Overwatch League Competitors. Example:<br><br><pre lang="json">"comparisons": [<br>"MATCH_DIFFERENTIAL",<br>"MATCH_GAME_DIFFERENTIAL",<br>"GAME_HEAD_TO_HEAD_DIFFERENTIAL", <br>"MATCH_HEAD_TO_HEAD_DIFFERENTIAL", <br>"ADVANTAGE"<br>]</pre>|
 |`totalMatches`|Int64| Total numbers of matches to be played in the current Overwatch League season. Example:<br><br><pre lang="json"> "totalMatches": 280</pre>|
 |`matchesConcluded`|Int64|The number of matches that have been played in the current Overwatch League season. Example:<br><br><pre lang="json"> "matchesConcluded": 16</pre>|
 |`playoffCutoff`|Int64|The number of teams eligible to compete in the Overwatch League Playoffs. Example:<br><br><pre lang="json">"playoffCutoff": 6</pre>
+
+### GET /standings
+Returns an Array of Competitors ordered by placement in the Overwatch League.
+
+### Standings Data Dictionary 
+Below you'll find the data dictionary for a Standings request. Some JSON examples will be omitted and covered in depth in later sections.
+
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`owl_divisions`|Array of [Division](Objects/Division.md) Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
+|`playoff_separators`|Array of Int64|
+
+
+
+## Player Endpoints
+The following endpoints retrieve information for Overwatch League Teams. 
