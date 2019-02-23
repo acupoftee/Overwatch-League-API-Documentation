@@ -175,7 +175,7 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 |`availableLanguages`   |Array of String| Indicates a list of country and language codes. Example:<br><br><pre lang="json">"availableLanguages": ["en", "en-gb", "es-mx", "es-es", "pt", "de", "fr", "it", "pl", "ru", "ja", "ko", "zh-tw", "zh-cn"]</pre><i>Languages: Engish, English (Great Britian), Spanish (Mexico), Spanish (Spain), Portuguese, German, French, Italian, Polish, Russian, Japanese, Korean, Chinese (Taiwan), Chinease (China)</i><br><br>
 |`name`               |  String| The name of the League. Example:<br><br><pre lang="json">"name": "The Overwatch League"</pre>
 |`description`         | String | A summary of the Overwatch League. Example: <br><br><pre lang="json">"description": "The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence."</pre>
-|`competitors`          | Array of [Competitor](objects/Competitor.md) Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
+|`competitors`          | Array of [Competitor](Objects/Competitor.md) Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
 |`game`                 | String | The String representation of the game being played. Example: <br><br><pre lang="json">"game": "OVERWATCH"</pre> |
 |`logo`  | String | A URL leading to the Overwatch League Logo. Example: <br><br><pre lang="json">"logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg"</pre>
 |`competitorType` | String| Describes the type of Competitors competing in the Overwatch League. Example:<br><br><pre lang="json">"competitorType": "TEAM"</pre>
@@ -191,7 +191,7 @@ Below you'll find the data dictionary for a Team request. Some JSON examples wil
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`                   | Int64 | The unique integer identifier for the Overwatch League Team. Example: <br><br><pre lang="json">"id": 4523</pre>
-|`divisionId` | Int64 | The unique integer identifier for the Team's Overwatch League [Division](objects/Division.md). Example:<br><br><pre lang="json">"divisionId": 80</pre>
+|`divisionId` | Int64 | The unique integer identifier for the Team's Overwatch League [Division](Objects/Division.md). Example:<br><br><pre lang="json">"divisionId": 80</pre>
 |`handle` | String | A String representation of an Overwatch League team's handle. Example: <br><br><pre lang="json">"handle": "fuel.6990"</pre>
 |`name` | String | A String representation of an Overwatch League team's name. Example: <br><br><pre lang="json">"name": "Boston Uprising"</pre>
 |`abbreviatedName` | String | A String representation of an Overwatch League team's 3 letter abbreviated name. Example: <br><br><pre lang="json">"abbreviatedName": "ATL"</pre>
@@ -205,4 +205,15 @@ Below you'll find the data dictionary for a Team request. Some JSON examples wil
 | `records` | [Records](objects/Records.md) Object | A Records object containing an Overwatch League team's league records. See Records object for more info.|
 
 ### GET /ranking
-Returns current rankings of all competing Overwatch League teams.
+Returns an Array of Competitors ordered by placement in the Overwatch League.
+
+### Ranking Data Dictionary 
+Below you'll find the data dictionary for a R anking request. Some JSON examples will be omitted and covered in depth in later sections.
+
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+| `content`           | Array of [Competitor](Objects/Competitor.md) Object| An Array of Competitors competing in the current Overwatch League Season
+| `comparisons`| Array of String| An Array containing the differentials used to rank all Overwatch League Competitors. Example:<br><br><pre lang="json">"comparisons": [<br>&emsp;&emsp;"MATCH_DIFFERENTIAL",<br>&emsp;&emsp;"MATCH_GAME_DIFFERENTIAL",<br>&emsp;&emsp;"GAME_HEAD_TO_HEAD_DIFFERENTIAL", <br>&emsp;&emsp;"MATCH_HEAD_TO_HEAD_DIFFERENTIAL", <br>&emsp;&emsp;"ADVANTAGE"<br>]</pre>|
+|`totalMatches`|Int64| Total numbers of matches to be played in the current Overwatch League season. Example:<br><br><pre lang="json"> "totalMatches": 280</pre>|
+|`matchesConcluded`|Int64|The number of matches that have been played in the current Overwatch League season. Example:<br><br><pre lang="json"> "matchesConcluded": 16</pre>|
+|`playoffCutoff`|Int64|The number of teams eligible to compete in the Overwatch League Playoffs. Example:<br><br><pre lang="json">"playoffCutoff": 6</pre>
