@@ -124,7 +124,7 @@ POST /user/favorites/order
 }
 ```
 
-### DELETE /user/favorites/{id}
+### DELETE /user/favorites/:id
 Deletes a favorite team from a User.
 
 ## Team Endpoints
@@ -167,7 +167,6 @@ Below is a table of all team IDs for retrieving information for specific teams:
 Returns all competing Overwatch League teams.
 
 #### Teams Data Dictionary 
-Below you'll find the data dictionary for a Teams request. Some JSON examples will be omitted and covered in depth in later sections.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
@@ -181,12 +180,11 @@ Below you'll find the data dictionary for a Teams request. Some JSON examples wi
 |`competitorType` | String| Describes the type of Competitors competing in the Overwatch League. Example:<br><br><pre lang="json">"competitorType": "TEAM"</pre>
 | `owl_division` | Array of Division Object | The Divisions making up the Overwatch League. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 
-### GET /v2/teams/{id}
+### GET /v2/teams/:id
 Returns information for a single Overwatch League Team given a [Team ID](#team-ids). For exmaple, to retrieve information about Boston Uprising we can add Boston Uprising's ID at the end of the URL:
 
 `https://api.overwatchleague.com/v2/teams/4402`
 ### Team Data Dictionary 
-Below you'll find the data dictionary for a Team request. Some JSON examples will be omitted and covered in depth in later sections.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
@@ -208,7 +206,6 @@ Below you'll find the data dictionary for a Team request. Some JSON examples wil
 Returns an Array of Competitors ordered by placement in the Overwatch League.
 
 ### Ranking Data Dictionary 
-Below you'll find the data dictionary for a Ranking request. Some JSON examples will be omitted and covered in depth in later sections.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
@@ -222,14 +219,53 @@ Below you'll find the data dictionary for a Ranking request. Some JSON examples 
 Returns an Array of Competitors ordered by placement in the Overwatch League.
 
 ### Standings Data Dictionary 
-Below you'll find the data dictionary for a Standings request. Some JSON examples will be omitted and covered in depth in later sections.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`owl_divisions`|Array of [Division](Objects/Division.md) Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
-|`playoff_separators`|Array of Int64|
-
+|`playoff_separators`|Array of Int64| An Array of Integers indicating the stages for the current season of the Overwatch League Playoffs|
+|`season`|Array of Competitor Objects|A season is comprised of Competitors organized in Divisions. This will return two groups of Competitor arrays inside a parent Division object.|
+|`ranks`|Array of Competitor Objects|An Array of Competitors sorted by current standinds in the Overwatch League. Comparison values include match differentials, match game differentials, game head to head differentials, match head to head differentials, and advantage.
 
 
 ## Player Endpoints
 The following endpoints retrieve information for Overwatch League Teams. 
+
+### GET /players
+Returns a Array of Player Objects representing players competitng in the current Overwatch League season.
+
+### GET /players/:id
+Returns a single Overwatch League Player when given the Player's ID.
+### Player Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`id`|Int64|A unique integer identifier for an Overwatch League Player|
+|`availableLanguages`|Array of Strings object|An array of language abbreviations indicating the avaliable languas for player information.|
+|`handle`|String|The name of the Player's Battle.net account.|
+|`name`|String|The Player's Overwatch username.|
+|`homeLocation`|String|The Player's hometown.|
+|`accounts`|Array of Account objects|An array containing all of the Player's social media accounts.|
+|`game`|String|The name of the game associated with the Player.|
+|`attributes`|Attribute Object|An Object containing information about a Player's most played heroes, player number, preferred slot, and role.|
+|`attributesVersion`|String|A String representation of the attribute version.|
+|`familyName`|String|The Player's last name.|
+|`givenName`|String|The Player's first name.|
+|`nationality`|String| A two letter abbrevition denoting the player's home country.|
+|`headshot`|String|A String represenation of a Player's headshot URL.|
+|`teams`|Array of Team objects|An array of the Player's teams|
+|`stats`|Object|An object consisting of the Players average stats per 10 minutes(i.e.  eliminations, deaths, hero damage, healing, final blows), total time played in the Overwatch League, and top heroes.|
+|`statRank`|Object|An object consisting of the Players stat ranks. Ranked stats include stats per 10 minutes (i.e.  eliminations, deaths, hero damage, healing, final blows) and total time played in the Overwatch League.|
+|`team`|Object|An object consisting of the Player's Team information.
+
+## Team Endpoints
+The following endpoints retrieve information for Overwatch League Matches. 
+
+### GET /matches
+Returns information about all matches in the Overwatch League.
+
+### Matches Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+
+
