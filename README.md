@@ -257,15 +257,39 @@ Returns a single Overwatch League Player when given the Player's ID.
 |`statRank`|Object|An object consisting of the Players stat ranks. Ranked stats include stats per 10 minutes (i.e.  eliminations, deaths, hero damage, healing, final blows) and total time played in the Overwatch League.|
 |`team`|Object|An object consisting of the Player's Team information.
 
-## Team Endpoints
+## Match Endpoints
 The following endpoints retrieve information for Overwatch League Matches. 
 
 ### GET /matches
-Returns information about all matches in the Overwatch League.
+Returns an array of Match objects. This denotes  all matches in the Overwatch League.
 
-### Matches Data Dictionary
+### GET /matches/:id
+Returns information about a single Overwatch League Match given a Match ID
+
+### Match Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
+|`id`|Int64|The unique Integer identifier for a singel Overwatch League Match|
+|`competitors`|Array of Competitor Objects|An Array containing the information of two competitng teams for an Overwatch League Match.|
+|`scores`|Array of Int64|An array containing the currents scores for two Overwatch League Competitors respectively.|
+|`conclusionValue`|Int64|The number of games for a single Overwatch League Match|
+|`conclusionStrategy`|String|A string representation of an Overwatch League Match conclusion.|
+|`winner`|Competitor Object|A Competitor object representing the winning team in an Overwatch League Match.|
+|`home`|String|A string indicating the home location of a match.|
+|`bracket`|Bracket Object|A Bracket Object which denotes the tournament infornation and stage information.|
+
+
+GET /live-match
+GET /schedule
+GET /streams
+GET /vods
+GET /maps
+GET /news
+GET /playlist/owl-app-playlist
+GET /about
+
+
+
 
 
 
