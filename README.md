@@ -264,7 +264,7 @@ The following endpoints retrieve information for Overwatch League Matches.
 Returns an array of Match objects. This denotes  all matches in the Overwatch League.
 
 ### GET /matches/:id
-Returns information about a single Overwatch League Match given a Match ID
+Returns information about a single Overwatch League Match given a Match ID.
 
 ### Match Data Dictionary
 | Attribute           | Type  | Description |
@@ -278,15 +278,62 @@ Returns information about a single Overwatch League Match given a Match ID
 |`home`|String|A string indicating the home location of a match.|
 |`bracket`|Bracket Object|A Bracket Object which denotes the tournament infornation and stage information.|
 
+### GET /live-match
+Returns information regarding an ongoing live match.
 
-GET /live-match
-GET /schedule
+### Live Match Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+### GET /schedule
+Returns information regarding an ongoing live match.
+
+### Schedule Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+### GET /streams
+Returns information regarding an ongoing live match.
+
+### Streams Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+### GET /vods
+Returns information regarding an ongoing live match.
+
+### VODS Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+### GET /maps
+Returns information regarding an ongoing live match.
+
+### Maps Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+
+### GET /news
+Returns Overwatch League news nformation.
+
+### News Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`totalBlogs`|Int64|An integer indicating the total number of blogs published on the Overwatch League website.|
+|`pageSize`|Int64|The number of blog posts per page.|
+|`page`|Int64|The current page of blogs as seen on https://overwatchleague.com|
+|`totalPages`|Int64|The total number of blog post pages available on https://overwatchleague.com|
+|`blogs`|Array of Blog Objects|A lists of blog posts on a specified page.|
+
+
+
+<!-- GET /schedule
 GET /streams
 GET /vods
 GET /maps
 GET /news
 GET /playlist/owl-app-playlist
-GET /about
+GET /about -->
 
 
 
