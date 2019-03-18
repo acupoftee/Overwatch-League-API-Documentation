@@ -293,6 +293,13 @@ Returns information regarding an ongoing live match.
 ### Schedule Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
+|`id`|String|A String identifier indicating the year of the current Overwatch League Season. Example:<br><br><pre lang="json">"id": "2019"</pre>|
+|`startDate`|String|A String representing the start date of the current Overwatch League season. Example:<br><br><pre lang="json">"startDate": "02-14-2019"</pre>|
+|`endDate`|String|A String representing the end date of the current Overwatch League season. Example:<br><br><pre lang="json">"endDate": "08-27-2019"</pre>|
+|`endDateMS`|Int64|An Integer representing the end date of the current Overwatch League season. Example:<br><br><pre lang="json">"endDateMS": 1566975540000</pre>|
+|`seriesId`|Int64|A unique integer identifier for the Overwatch League series. Example:<br><br><pre lang="json">"series": 181</pre>|
+|`stages`|Array of Stage Objects|A list of all stages for the Overwatch League|
+
 
 ### GET /streams
 Returns information regarding an ongoing live match.
