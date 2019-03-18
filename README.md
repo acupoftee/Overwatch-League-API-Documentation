@@ -284,6 +284,8 @@ Returns information regarding an ongoing live match.
 ### Live Match Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
+|`liveMatch`|Live Object| A Live object with information about the current match.|
+|`nextMatch`|Live Object| A Live object with information about the next match.|
 
 ### GET /schedule
 Returns information regarding an ongoing live match.
