@@ -28,7 +28,7 @@ Each Competitor has a unique ID should a user look up information for a specific
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/95UE5OJKSFQF1543968718489.png" height="20"> Washington Justice | 7697 |
 
 ## Competitor Data Dictionary
-See [Team Data Dictionary](#team-data-dictionary)
+See [Team Data Dictionary](../README.md#team-data-dictionary)
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
