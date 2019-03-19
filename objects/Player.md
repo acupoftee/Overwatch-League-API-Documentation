@@ -1,4 +1,7 @@
+<img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/ti/TI08Z9W94IIJ1552515454148.jpg">
+
 # Players
+
 A Player is a member of an Overwatch League Competitor. 
 
 ## Player Data Dictionary
