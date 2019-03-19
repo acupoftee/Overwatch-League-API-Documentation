@@ -39,7 +39,7 @@ See [Team Data Dictionary](../README.md#team-data-dictionary)
 |`handle` | String | A String representation of an Overwatch League team's handle. Example: <br><br><pre lang="json">"handle": "fuel.6990"</pre>
 |`name` | String | A String representation of an Overwatch League team's name. Example: <br><br><pre lang="json">"name": "Boston Uprising"</pre>
 |`abbreviatedName` | String | A String representation of an Overwatch League team's 3 letter abbreviated name. Example: <br><br><pre lang="json">"abbreviatedName": "ATL"</pre>
-| `logo` | [Logo](objects/Logo.md) Object | A Logo object containing an Overwatch League team's logo in SVG and PNG formats.|
+| `logo` | [Logo](Logo.md) Object | A Logo object containing an Overwatch League team's logo in SVG and PNG formats.|
 |`hasFallback` | Boolean | Indicates whether or not a team has media queries which specific browsers cannot handle, such as logo files and headshot files. Example: <br><br><pre lang="json">"hasFallback": false</pre>
 |`location` | String | A String representation of an Overwatch League team's base location. Example: <br><br><pre lang="json">"location": "Boston, MA"</pre>
 | `players` | Array of [Player](objects/Player.md) Object |A Player roster for a competing Overwatch League Team. Additionally, see Player object for more info. |
