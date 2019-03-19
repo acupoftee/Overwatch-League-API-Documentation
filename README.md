@@ -174,7 +174,7 @@ Returns all competing Overwatch League teams.
 |`availableLanguages`   |Array of String| Indicates a list of country and language codes. Example:<br><br><pre lang="json">"availableLanguages": ["en", "en-gb", "es-mx", "es-es", "pt", "de", "fr", "it", "pl", "ru", "ja", "ko", "zh-tw", "zh-cn"]</pre><i>Languages: Engish, English (Great Britian), Spanish (Mexico), Spanish (Spain), Portuguese, German, French, Italian, Polish, Russian, Japanese, Korean, Chinese (Taiwan), Chinease (China)</i><br><br>
 |`name`               |  String| The name of the League. Example:<br><br><pre lang="json">"name": "The Overwatch League"</pre>
 |`description`         | String | A summary of the Overwatch League. Example: <br><br><pre lang="json">"description": "The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence."</pre>
-|`competitors`          | Array of [Competitor](Objects/Competitor.md) Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
+|`competitors`          | Array of [Competitor](/Objects/Competitor.md) Object | Competitors are Overwatch League Teams competing in the current Overwatch League Season. Additionally, see Competitor Object for more info.
 |`game`                 | String | The String representation of the game being played. Example: <br><br><pre lang="json">"game": "OVERWATCH"</pre> |
 |`logo`  | String | A URL leading to the Overwatch League Logo. Example: <br><br><pre lang="json">"logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg"</pre>
 |`competitorType` | String| Describes the type of Competitors competing in the Overwatch League. Example:<br><br><pre lang="json">"competitorType": "TEAM"</pre>
@@ -209,7 +209,7 @@ Returns an Array of Competitors ordered by placement in the Overwatch League.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-| `content`           | Array of [Competitor](Objects/Competitor.md) Object| An Array of Competitors competing in the current Overwatch League Season
+| `content`           | Array of [Competitor](objects/Competitor.md) Object| An Array of Competitors competing in the current Overwatch League Season
 | `comparisons`| Array of String| An Array containing the differentials used to rank all Overwatch League Competitors. Example:<br><br><pre lang="json">"comparisons": [<br>"MATCH_DIFFERENTIAL",<br>"MATCH_GAME_DIFFERENTIAL",<br>"GAME_HEAD_TO_HEAD_DIFFERENTIAL", <br>"MATCH_HEAD_TO_HEAD_DIFFERENTIAL", <br>"ADVANTAGE"<br>]</pre>|
 |`totalMatches`|Int64| Total numbers of matches to be played in the current Overwatch League season. Example:<br><br><pre lang="json"> "totalMatches": 280</pre>|
 |`matchesConcluded`|Int64|The number of matches that have been played in the current Overwatch League season. Example:<br><br><pre lang="json"> "matchesConcluded": 16</pre>|
