@@ -288,7 +288,7 @@ Returns information regarding an ongoing live match.
 |`nextMatch`|Live Object| A Live object with information about the next match.|
 
 ### GET /schedule
-Returns information regarding an ongoing live match.
+Returns the schedule for the current Overwatch League season.
 
 ### Schedule Data Dictionary
 | Attribute           | Type  | Description |
@@ -302,11 +302,25 @@ Returns information regarding an ongoing live match.
 
 
 ### GET /streams
-Returns information regarding an ongoing live match.
+Returns Overwatch League's stream information
 
 ### Streams Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
+|`id`|Int64|A unique integer identifier for the Overwatch League's stream.|
+|`name`|String|The stream title.|
+|`slug`|String|The partt of a URL which identifies the Overwatch League stream on the stream's site.|
+|`subtitle`|String|The sub text for the stream.|
+|`description`|String|The current stream description.|
+|`stream_name`|String|The name of the stream's host channel.|
+|`is_hidden`|Boolean|Indicates if a stream information is hidden or not on the Overwatch League website.|
+|`image_6_9_small`|String|A URL of the Overwatch League stream icon.|
+|`tags`|Array of Strings|A list of tags for the Overwatch League streams.|
+|`status`|Integer|Indicates whether or not the stream is visible and live|
+|`channel_id`|Int64|A unique integer identifier for the Overwatch League's Twitch channel.|
+|`cdn`|String|The name of the cache measurement mechanism for content delivery|
+
+
 
 ### GET /vods
 Returns information regarding an ongoing live match.
