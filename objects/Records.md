@@ -1,3 +1,5 @@
+<img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/kz/KZFG2DZCYMAJ1551917378814.jpg">
+
 # Records
 Records maintain information about a Team's statistics. 
 
@@ -13,4 +15,4 @@ Records maintain information about a Team's statistics.
 |`gameTies`|Int64|The number of total tie games scored by a Competitor.|
 |`gamePointsFor`|Int64|The number of total game points earned by the Competitor|
 |`gamePointsAgainst`|Int64|The number of total tie games scored by a Competitor's opponents.|
-|`comparisons`|Array of Comparison Objects|A list of comparison methods and values used to rank players. Each Comparison object has a `key`: a comparison method, and a `value`: the comparison differential.|
+|`comparisons`|Array of Comparison Objects|A list of comparison methods and values used to rank players. Each Comparison object has a `key`: a comparison method, and a `value`: the comparison differential.| 
