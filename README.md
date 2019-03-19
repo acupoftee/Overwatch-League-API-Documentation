@@ -323,7 +323,7 @@ Returns Overwatch League's stream information
 
 
 ### GET /vods
-Returns information regarding an ongoing live match.
+Returns a list of videos on demand from https://overwatchleague.com
 
 ### VODs Data Dictionary
 | Attribute           | Type  | Description |
@@ -333,12 +333,18 @@ Returns information regarding an ongoing live match.
 |`data`|Array of VOD Objects|A List of available VODs on https://overwatchleague.com|
 
 ### GET /maps
-Returns information regarding an ongoing live match.
+Returns all of the available maps in Overwatch.
 
 ### Maps Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-
+|`guid`|Int128| A Globally Unique Identifier for an Overwatch Map.|
+|`name`|Name object|An object with the name of a map in different languages.|
+|`gameModes`|Array of Game Mode Objects|A list of available modes for a map. Each Game Mode has an `Id`, `Name`, and `Key`.|
+|`id`|String|A string identifier of the map. This is typically the english name of the map.|
+|`icon`|String|A URL of the map icon.|
+|`thumbnail`|String|A URL of the map thumbnail.|
+|`type`|String|The type of map. There are four types of maps used in the Overwatch League: Control, Hybrid, Assault, and Escort.|
 ### GET /news
 Returns Overwatch League news nformation.
 
@@ -350,19 +356,3 @@ Returns Overwatch League news nformation.
 |`page`|Int64|The current page of blogs as seen on https://overwatchleague.com|
 |`totalPages`|Int64|The total number of blog post pages available on https://overwatchleague.com|
 |`blogs`|Array of Blog Objects|A lists of blog posts on a specified page.|
-
-
-
-<!-- GET /schedule
-GET /streams
-GET /vods
-GET /maps
-GET /news
-GET /playlist/owl-app-playlist
-GET /about -->
-
-
-
-
-
-
