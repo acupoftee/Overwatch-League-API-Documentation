@@ -325,9 +325,12 @@ Returns Overwatch League's stream information
 ### GET /vods
 Returns information regarding an ongoing live match.
 
-### VODS Data Dictionary
+### VODs Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
+|`status`|String|Indicates if the list of vods were retrieved or not.|
+|`code`|Int64|Indicates if the list of vods were retrieved or not.|
+|`data`|Array of VOD Objects|A List of available VODs on https://overwatchleague.com|
 
 ### GET /maps
 Returns information regarding an ongoing live match.
