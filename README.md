@@ -196,7 +196,7 @@ Returns information for a single Overwatch League Team given a [Team ID](#team-i
 | `logo` | [Logo](objects/Logo.md) Object | A Logo object containing an Overwatch League team's logo in SVG and PNG formats.|
 |`hasFallback` | Boolean | Indicates whether or not a team has media queries which specific browsers cannot handle, such as logo files and headshot files. Example: <br><br><pre lang="json">"hasFallback": false</pre>
 |`location` | String | A String representation of an Overwatch League team's base location. Example: <br><br><pre lang="json">"location": "Boston, MA"</pre>
-| `players` | Array of [Player](objects/Player.md) Object |A Player roster for a competing Overwatch League Team. Additionally, see Player object for more info. |
+| `players` | Array of [Player](objects/Player.md) Object |A Player roster for a competing Overwatch League Team. Additionally, see [Player Object](objects/Player.md) for more info. |
 |`website` | String | A String representation of an Overwatch League team's website url. Example: <br><br><pre lang="json">"website": "https://fuel.overwatchleague.com"</pre>
 |`placement` | Int64 | The current standing of an Overwatch League Team. Example: <br><br><pre lang="json">"placement": 1</pre>
 |`advantage` | Int64 | An integer indicating the advantage an Overwatch League Team has over its competitors. Example: <br><br><pre lang="json">"advantage": 0</pre>
@@ -232,7 +232,7 @@ Returns an Array of Competitors ordered by placement in the Overwatch League.
 The following endpoints retrieve information for Overwatch League Teams. 
 
 ### GET /players
-Returns a Array of Player Objects representing players competitng in the current Overwatch League season.
+Returns a Array of [Player Objects](objects/Player.md) representing players competitng in the current Overwatch League season.
 
 ### GET /players/:id
 Returns a single Overwatch League Player when given the Player's ID.
