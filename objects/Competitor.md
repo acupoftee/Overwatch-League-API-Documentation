@@ -1,6 +1,7 @@
 # Competitors
 A Competitor is an Overwatch League team competiting in the current season. 
 
+## Competitor IDs
 Each Competitor has a unique ID should a user look up information for a specific team. Below is a list of team IDs:
 
 | Team                   | ID   |

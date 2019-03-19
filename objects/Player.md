@@ -1,7 +1,7 @@
 # Players
-A Player is a member of an Overwatch League Competitor. Each player 
+A Player is a member of an Overwatch League Competitor. 
 
-### Player Data Dictionary
+## Player Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`|Int64|A unique integer identifier for an Overwatch League Player|
@@ -17,7 +17,7 @@ A Player is a member of an Overwatch League Competitor. Each player
 |`givenName`|String|The Player's first name.|
 |`nationality`|String| A two letter abbrevition denoting the player's home country.|
 |`headshot`|String|A String represenation of a Player's headshot URL.|
-|`teams`|Array of Team objects|An array of the Player's teams|
+|`teams`|Array of [Competitor](Competitor.md) Objects|An array of the Player's teams|
 |`stats`|Object|An object consisting of the Players average stats per 10 minutes(i.e.  eliminations, deaths, hero damage, healing, final blows), total time played in the Overwatch League, and top heroes.|
-|`statRank`|Object|An object consisting of the Players stat ranks. Ranked stats include stats per 10 minutes (i.e.  eliminations, deaths, hero damage, healing, final blows) and total time played in the Overwatch League.|
-|`team`|Object|An object consisting of the Player's Team information.
+|`statRank`|Stats Object|An object consisting of the Players stat ranks. Ranked stats include stats per 10 minutes (i.e.  eliminations, deaths, hero damage, healing, final blows) and total time played in the Overwatch League.|
+|`team`|[Competitor](Competitor.md) Object|An object consisting of the Player's Team information.
