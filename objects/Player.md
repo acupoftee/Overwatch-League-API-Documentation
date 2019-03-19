@@ -1,8 +1,8 @@
-<img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/ti/TI08Z9W94IIJ1552515454148.jpg">
+<img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/sd/SDUN2UM5NL751550705773905.jpg">
 
 # Players
 
-A Player is a member of an Overwatch League Competitor. 
+A Player is a member of a competing Overwatch League team. 
 
 ## Player Data Dictionary
 | Attribute           | Type  | Description |

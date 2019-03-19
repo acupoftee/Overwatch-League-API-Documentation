@@ -1,3 +1,5 @@
+<img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/fz/FZEX5FAOR8J61549992684261.jpg">
+
 # Competitors
 A Competitor is an Overwatch League team competiting in the current season. 
 
