@@ -3,6 +3,7 @@ A Competitor is an Overwatch League team competiting in the current season.
 
 ## Competitor Data Dictionary
 See [Team Data Dictionary](#team-data-dictionary)
+
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`                   | Int64 | The unique integer identifier for the Overwatch League Team. Example: <br><br><pre lang="json">"id": 4523</pre>
