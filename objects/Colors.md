@@ -9,3 +9,22 @@ Overwatch League teams each have their own color palettes for branding and recog
 |`primary`|Object|Has a `color`  and an `opacity` property|
 |`secondary`|Object|Has a `color`  and an `opacity` property|
 |`tertiary`|Object|Has a `color`  and an `opacity` property|
+
+## Sample Colors JSON
+
+```json
+"colors": {
+    "primary": {
+        "color": "#032340",
+        "opacity": 1
+    },
+    "secondary": {
+        "color": "#0072CE",
+        "opacity": 1
+    },
+    "tertiary": {
+        "color": "#9EA2A2",
+        "opacity": 1
+    }
+}
+```

@@ -16,3 +16,40 @@ Records maintain information about a Team's statistics.
 |`gamePointsFor`|Int64|The number of total game points earned by the Competitor|
 |`gamePointsAgainst`|Int64|The number of total tie games scored by a Competitor's opponents.|
 |`comparisons`|Array of Comparison Objects|A list of comparison methods and values used to rank players. Each Comparison object has a `key`: a comparison method, and a `value`: the comparison differential.| 
+
+## Sample Records JSON
+```json
+"records": {
+    "matchWin": 1,
+    "matchLoss": 1,
+    "matchDraw": 0,
+    "matchBye": 0,
+    "gameWin": 3,
+    "gameLoss": 5,
+    "gameTie": 0,
+    "gamePointsFor": 0,
+    "gamePointsAgainst": 0,
+    "comparisons": [
+        {
+            "key": "MATCH_DIFFERENTIAL",
+            "value": 0
+        },
+        {
+            "key": "MATCH_GAME_DIFFERENTIAL",
+            "value": -2
+        },
+        {
+            "key": "GAME_HEAD_TO_HEAD_DIFFERENTIAL",
+            "value": null
+        },
+        {
+            "key": "MATCH_HEAD_TO_HEAD_DIFFERENTIAL",
+            "value": null
+        },
+        {
+            "key": "ADVANTAGE",
+            "value": 0
+        }
+    ]
+}
+```

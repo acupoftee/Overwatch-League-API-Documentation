@@ -47,3 +47,144 @@ See [Team Data Dictionary](../README.md#team-data-dictionary)
 |`placement` | Int64 | The current standing of an Overwatch League Team. Example: <br><br><pre lang="json">"placement": 1</pre>
 |`advantage` | Int64 | An integer indicating the advantage an Overwatch League Team has over its competitors. Example: <br><br><pre lang="json">"advantage": 0</pre>
 | `records` | [Records](Records.md) Object | A Records object containing an Overwatch League team's league records. See Records object for more info.|
+
+## Sample Competitor JSON
+```json
+{
+    "data": {
+        "id": 4523,
+        "divisionId": 80,
+        "handle": "fuel.6990",
+        "name": "Dallas Fuel",
+        "abbreviatedName": "DAL",
+        "logo": {
+            "main": {
+                "svg": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg",
+                "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png"
+            },
+            "mainName": {
+                "svg": "https://bnetcmsus-a.akamaihd.net/cms/page_media/Q8TMKNUFIJL51519747890664.svg",
+                "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/Q8TMKNUFIJL51519747890664.svg"
+            },
+            "altDark": {
+                "svg": "https://bnetcmsus-a.akamaihd.net/cms/page_media/LLMV1UTBVHN11544055825034.svg",
+                "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/YUUL7E0CSF591544055626557.png"
+            }
+        },
+        "hasFallback": false,
+        "location": "Dallas, TX",
+        "players": [],
+        "colors": {
+            "primary": {
+                "color": "#032340",
+                "opacity": 1
+            },
+            "secondary": {
+                "color": "#0072CE",
+                "opacity": 1
+            },
+            "tertiary": {
+                "color": "#9EA2A2",
+                "opacity": 1
+            }
+        },
+        "accounts": [
+            {
+                "id": 2268,
+                "type": "TWITTER",
+                "url": "https://twitter.com/DallasFuel"
+            },
+            {
+                "id": 2424,
+                "type": "DISCORD",
+                "url": "https://discord.gg/dallasfuel"
+            },
+            {
+                "id": 2372,
+                "type": "INSTAGRAM",
+                "url": "https://www.instagram.com/DallasFuel"
+            },
+            {
+                "id": 2267,
+                "type": "FACEBOOK",
+                "url": "https://www.facebook.com/TheDallasFuel"
+            },
+            {
+                "id": 2269,
+                "type": "YOUTUBE_CHANNEL",
+                "url": "https://www.youtube.com/channel/UCj4XSmDqIhRT4frKzRTMyrA"
+            }
+        ],
+        "website": "https://fuel.overwatchleague.com",
+        "placement": 13,
+        "advantage": 0,
+        "records": {
+            "matchWin": 1,
+            "matchLoss": 1,
+            "matchDraw": 0,
+            "matchBye": 0,
+            "gameWin": 3,
+            "gameLoss": 5,
+            "gameTie": 0,
+            "gamePointsFor": 0,
+            "gamePointsAgainst": 0,
+            "comparisons": [
+                {
+                    "key": "MATCH_DIFFERENTIAL",
+                    "value": 0
+                },
+                {
+                    "key": "MATCH_GAME_DIFFERENTIAL",
+                    "value": -2
+                },
+                {
+                    "key": "GAME_HEAD_TO_HEAD_DIFFERENTIAL",
+                    "value": null
+                },
+                {
+                    "key": "MATCH_HEAD_TO_HEAD_DIFFERENTIAL",
+                    "value": null
+                },
+                {
+                    "key": "ADVANTAGE",
+                    "value": 0
+                }
+            ]
+        }
+    },
+    "meta": {
+        "strings": {
+            "owl.team.header.atlantic": "Atlantic",
+            "owl.team.header.pacific": "Pacific",
+            "owl.team.view-all": "View All",
+            "owl.teams.recent-match-vods": "Recent Matches",
+            "owl.team.header.social": "Social",
+            "owl.team.header.w": "W",
+            "owl.team.header.l": "L",
+            "owl.standings.header.alt.division": "Division",
+            "owl.team.league-standing": "League Standing",
+            "owl.team.location": "Location",
+            "owc.content-modules.round-robin.match-record": "Match Record",
+            "owl.teams.roster.team-website": "Team Website",
+            "owl.team.upcoming-matches": "Upcoming Matches",
+            "owl.team.no-matches-scheduled": "No matches scheduled",
+            "owl.matches.game.roster": "Roster",
+            "owl.content-modules.recent-news.title": "Recent News",
+            "owl.players.roles.offense": "Damage",
+            "owl.players.roles.defense": "Damage",
+            "owl.players.roles.tank": "Tank",
+            "owl.players.roles.support": "Support",
+            "owl.players.roles.flex": "Flex",
+            "owl.schedule.today": "Today",
+            "owl.schedule.match-details": "Match Details",
+            "owl.labels.news": "News",
+            "owl.labels.feature": "Feature",
+            "owl.labels.announcement": "Announcement",
+            "owl.labels.training": "Training",
+            "owl.labels.path-to-pro": "Path to Pro",
+            "owl.labels.highlight": "Highlight",
+            "owl.labels.analysis": "Analysis"
+        }
+    }
+}
+```

@@ -27,3 +27,21 @@ Logos are graphic marks, emblems, or symbols used by Overwatch League teams in o
 |`main`|Object|Has an `svg` and a `png` property, both of which are String URLs for the Competitor's main logo.|
 |`mainName`|Object|Has an `svg` and a `png` property, both of which are String URLs for the Competitor's name logo.|
 |`altDark`|Object|Has an `svg` and a `png` property, both of which are String URLs of the Competitor's alternative logo.|
+
+## Sample Logo JSON
+```json
+"logo": {
+    "main": {
+        "svg": "https://bnetcmsus-a.akamaihd.net/cms/template_resource/YX6JZ6FR89LU1507822882865.svg",
+        "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/NO44N7DDJAPF1508792362936.png"
+    },
+    "mainName": {
+        "svg": "https://bnetcmsus-a.akamaihd.net/cms/page_media/Q8TMKNUFIJL51519747890664.svg",
+        "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/Q8TMKNUFIJL51519747890664.svg"
+    },
+    "altDark": {
+        "svg": "https://bnetcmsus-a.akamaihd.net/cms/page_media/LLMV1UTBVHN11544055825034.svg",
+        "png": "https://bnetcmsus-a.akamaihd.net/cms/page_media/YUUL7E0CSF591544055626557.png"
+    }
+}
+```

@@ -189,7 +189,7 @@ Returns information for a single Overwatch League Team given a [Team ID](#team-i
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`                   | Int64 | The unique integer identifier for the Overwatch League Team. Example: <br><br><pre lang="json">"id": 4523</pre>
-|`divisionId` | Int64 | The unique integer identifier for the Team's Overwatch League [Division](objects/Division.md). Example:<br><br><pre lang="json">"divisionId": 80</pre>
+|`divisionId` | Int64 | The unique integer identifier for the Team's Overwatch League Division. The Atlanatic Division has an id of 79, and the Pacific Division's id is 80.  Example:<br><br><pre lang="json">"divisionId": 80</pre>
 |`handle` | String | A String representation of an Overwatch League team's handle. Example: <br><br><pre lang="json">"handle": "fuel.6990"</pre>
 |`name` | String | A String representation of an Overwatch League team's name. Example: <br><br><pre lang="json">"name": "Boston Uprising"</pre>
 |`abbreviatedName` | String | A String representation of an Overwatch League team's 3 letter abbreviated name. Example: <br><br><pre lang="json">"abbreviatedName": "ATL"</pre>
@@ -222,7 +222,7 @@ Returns an Array of Competitors ordered by placement in the Overwatch League.
 
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-|`owl_divisions`|Array of [Division](objects/Division.md) Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
+|`owl_divisions`|Array of Division Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 |`playoff_separators`|Array of Int64| An Array of Integers indicating the stages for the current season of the Overwatch League Playoffs|
 |`season`|Array of Competitor Objects|A season is comprised of Competitors organized in Divisions. This will return two groups of Competitor arrays inside a parent Division object.|
 |`ranks`|Array of Competitor Objects|An Array of Competitors sorted by current standinds in the Overwatch League. Comparison values include match differentials, match game differentials, game head to head differentials, match head to head differentials, and advantage.
