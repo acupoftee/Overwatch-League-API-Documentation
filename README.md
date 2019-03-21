@@ -236,6 +236,7 @@ Returns a Array of [Player Objects](objects/Player.md) representing players comp
 
 ### GET /players/:id
 Returns a single Overwatch League Player when given the Player's ID.
+
 ### Player Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
