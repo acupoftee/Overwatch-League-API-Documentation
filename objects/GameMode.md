@@ -7,6 +7,7 @@
 |`Name`|String|The name of the game mode.|
 |`Key`|Object|An object containing an API key for the game's data. Each Key has a `href` property with a URL to the data.|
 
+## Sample Game Mode JSON
 ```json
 {
     "Id": "0x0230000000000014",

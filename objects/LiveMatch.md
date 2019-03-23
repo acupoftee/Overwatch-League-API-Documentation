@@ -4,6 +4,21 @@
 A Live match is a match currently streamed on Overwatch League's streaming channels. 
 
 ## Live Match Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`id`|Int64|A unique Integer identifier for an ongoing match.|
+|`competitors`|Array of Competitor Objects|An array of two Overwatch League teams competitng in an ongoing match.|
+|`scores`|Array of Score Objects|An array of 2 Integers representing the current match scores of both Competitors respectively. Each Score object contains a single `value` property, with the current score for a Competitor.|
+|`conclusionValue`|Integer|An Integer denoting the conclusion value of a match. The conclusion value is the number of games to be played in a single Overwatch League match.|
+|`conclusionStrategy`|String|A conclusion strategy determines how a match is concluded. For example, a minimum conclusion strategy determines a winner after the minimum number of games has been played in a match.|
+|`state`|String|The current state of an Overwatch League match.|
+|`status`|String|The current state of an Overwatch League match.|
+|`game`|Array of Game Objects|A list of individual games taking place in a single Overwatch League match. Each game takes place on a different map.|
+|`bracket`|Bracket Object|Denotes the current bracket for both Competitors.|
+|`dateCreated`|Int64|An Integer representation of the date the match alert was created.|
+|`handle`|String|The String representation of the match's handle.|
+|`hyperlinks`|Array of Hyperlink Objects|An array of Hyperlink objects for all available streaming platforms for an Overwatch League match.|
+
 
 
 ## Sample Live Match JSON
