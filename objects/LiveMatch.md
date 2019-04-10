@@ -18,7 +18,7 @@ A Live match is a match currently streamed on Overwatch League's streaming chann
 |`dateCreated`|Int64|An Integer representation of the date the match alert was created.|
 |`handle`|String|The String representation of the match's handle.|
 |`hyperlinks`|Array of Hyperlink Objects|An array of Hyperlink objects for all available streaming platforms for an Overwatch League match.|
-
+|`competitorStatuses`|Array of Strings|A list of competitor statuses.|
 
 
 ## Sample Live Match JSON
