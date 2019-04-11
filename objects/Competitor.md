@@ -151,40 +151,6 @@ See [Team Data Dictionary](../README.md#team-data-dictionary)
                 }
             ]
         }
-    },
-    "meta": {
-        "strings": {
-            "owl.team.header.atlantic": "Atlantic",
-            "owl.team.header.pacific": "Pacific",
-            "owl.team.view-all": "View All",
-            "owl.teams.recent-match-vods": "Recent Matches",
-            "owl.team.header.social": "Social",
-            "owl.team.header.w": "W",
-            "owl.team.header.l": "L",
-            "owl.standings.header.alt.division": "Division",
-            "owl.team.league-standing": "League Standing",
-            "owl.team.location": "Location",
-            "owc.content-modules.round-robin.match-record": "Match Record",
-            "owl.teams.roster.team-website": "Team Website",
-            "owl.team.upcoming-matches": "Upcoming Matches",
-            "owl.team.no-matches-scheduled": "No matches scheduled",
-            "owl.matches.game.roster": "Roster",
-            "owl.content-modules.recent-news.title": "Recent News",
-            "owl.players.roles.offense": "Damage",
-            "owl.players.roles.defense": "Damage",
-            "owl.players.roles.tank": "Tank",
-            "owl.players.roles.support": "Support",
-            "owl.players.roles.flex": "Flex",
-            "owl.schedule.today": "Today",
-            "owl.schedule.match-details": "Match Details",
-            "owl.labels.news": "News",
-            "owl.labels.feature": "Feature",
-            "owl.labels.announcement": "Announcement",
-            "owl.labels.training": "Training",
-            "owl.labels.path-to-pro": "Path to Pro",
-            "owl.labels.highlight": "Highlight",
-            "owl.labels.analysis": "Analysis"
-        }
     }
 }
 ```
