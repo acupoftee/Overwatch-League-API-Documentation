@@ -19,6 +19,18 @@ A Live match is a match currently streamed on Overwatch League's streaming chann
 |`handle`|String|The String representation of the match's handle.|
 |`hyperlinks`|Array of Hyperlink Objects|An array of Hyperlink objects for all available streaming platforms for an Overwatch League match.|
 |`competitorStatuses`|Array of Strings|A list of competitor statuses.|
+|`timeZone`|String|The time zone used for the Overwatch League schedule.|
+|`startDateTS`|Int64|The Integer time string representing the start date of a match.|
+|`endDateTS`|Int64|The Integer time string representing the end date of a match.|
+|`youtubeId`|String|The String identifier for a concluded match posted on YouTube.|
+|`wins`|Array of Int64|An Integer array containing the number of wins for each Competitor respectively.|
+|`ties`|Array of Int64|An Integer array containing the number of ties for each Competitor respectively.|
+|`losses`|Array of Int64|An Integer array containing the number of losses for each Competitor respectively.|
+|`videos`|Array of String|A String array containing URL links for an Overwatch League match.|
+|`startDateTS`|Int64|The Integer time string representing the time until an upcoming match.|
+|`liveStatus`|String|The Integer time string representing the start date of a match.|
+
+
 
 
 ## Sample Live Match JSON
