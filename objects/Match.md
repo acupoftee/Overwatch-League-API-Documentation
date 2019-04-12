@@ -152,32 +152,6 @@
     "endDate": 1550194800000,
     "showStartTime": true,
     "showEndTime": true,
-    "rankings": [],
-    "meta": {
-        "strings": {
-            "owl.matches.countdown.unit.days": "Days",
-            "owl.matches.countdown.unit.hours": "Hrs",
-            "owl.matches.countdown.unit.minutes": "Min",
-            "owl.matches.maps.title.upcoming": "Match Preview",
-            "owl.matches.maps.title.finished": "Match Summary",
-            "owl.matches.game": "Game ##",
-            "owl.matches.game.final": "Final",
-            "owl.matches.game.final-ot": "Final (OT)",
-            "owl.matches.game.overview": "Overview",
-            "owl.matches.game.type": "## Map Set",
-            "owl.matches.game.type.minimum": "{0} Map Set",
-            "owl.matches.game.type.best-of": "Best of {0}",
-            "owl.matches.game.result": "Game Result",
-            "owl.matches.game.roster": "Roster",
-            "owl.matches.pagination.previous": "Prev Match",
-            "owl.matches.pagination.versus": "vs",
-            "owl.matches.pagination.next": "Next Match",
-            "owl.players.roles.tank": "Tank",
-            "owl.players.roles.offense": "Damage",
-            "owl.players.roles.defense": "Damage",
-            "owl.players.roles.support": "Support",
-            "owl.players.roles.flex": "Flex"
-        }
-    }
+    "rankings": []
 }
 ```
