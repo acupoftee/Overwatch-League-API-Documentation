@@ -1,4 +1,7 @@
 # Bracket
+A bracket represents a series of games played during an Overwatch League match usually leading to a single winner.
+
+## Bracket Data Dictionary
 
 ## Sample Bracket JSON
 ```json
