@@ -1,9 +1,10 @@
 # Blog 
+A Blog is where articles pertaining to Overwatch League are located. Each Blog covers topics including player news, match summaries, team updates, and more.
 
 ## Blog Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-|`blodId`|Int64|The unique Integer identifier for a Blog.|
+|`blodId`|Int64|The unique Integer identifier for a Blog post.|
 |`created`|Int64|An Integer representing the date and time a Blog was created.|
 |`updated`|Int64|An Integer representing the date and time a Blog was updated.|
 |`publish`|Int64|An Integer representing the date and time a Blog was published.|
@@ -19,7 +20,8 @@
 |`defaultUrl`|String|The default URL for a Blog.|
 |`commentsEnabled`|Boolean|Indicates whether or not comments are enabled for a Blog.|
 |`pollAttached`|Boolean|Indicates whether or not polls are enabled for a Blog.|
-|`communityBlogs`|Array of Objects|Indicates whether or not comments are enabled for a Blog.|
+|`localizationPublish`|Int64|An Integer representing the date and time a localized Blog was published.|
+|`siteCategory`|String|The section of the Overwatch League website containing the Blog post.|
 
 
 
