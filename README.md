@@ -33,32 +33,40 @@ GET /
 # API Endpoints Overview
 Here are the endpoints used to access Overwatch League's information such as player information, match updates, league standings, news reports, and much more. This document will be going over these objects in more detail.
 
+## Table of Contents
 
-GET /login <br>
-GET /auth/bnet/callback?code={code}<br>
-GET /user<br>
-GET /user/favorites<br>
-GET /v2/teams<br>
-GET /v2/teams/{id}<br>
-GET /ranking<br>
-GET /standings<br>
-GET /players<br>
-GET /players/{id}<br>
-GET /matches<br>
-GET /matches/{id}<br>
-GET /live-match<br>
-GET /schedule<br>
-GET /streams<br>
-GET /vods<br>
-GET /maps<br>
-GET /news<br>
+### User Endpoints
+[GET /login](#get-login) <br>
+[GET /auth/bnet/callback?code=:code](#get-authbnetcallbackcodecode)<br>
+[GET /user](#get-user)<br>
+[GET /user/favorites](#get-userfavorites)<br>
+[POST /user/favorites](#post-userfavorites)<br>
+[POST /user/favorites/order](#post-userfavoritesorder)<br>
+[DELETE /user/favorites/:id](#delete-userfavoritesid)<br>
+
+### Team Endpoints
+[GET /v2/teams](#get-v2teams) <br>
+[GET /v2/teams/:id](#get-v2teamsid)<br>
+[GET /ranking](#get-ranking)<br>
+[GET /standings](#get-standings)<br>
+
+### Player Endpoints
+[GET /players](#get-players)<br>
+[GET /players/:id](#get-playersid)<br>
+
+### Match Endpoints
+[GET /matches](#get-matches)<br>
+[GET /matches/:id](#get-matchesid)<br>
+[GET /live-match](#get-live-match)<br>
+[GET /schedule](#get-schedule)<br>
+[GET /streams](#get-streams)<br>
+[GET /vods](#get-vods)<br>
+[GET /maps](#get-maps)<br>
+[GET /news](#get-news)<br>
+
+### Additonal Endpoints
 GET /playlist/owl-app-playlist<br>
 GET /about<br>
-
-POST /user/favorites<br>
-POST /user/favorites/order<br>
-
-DELETE /user/favorites/{id}<br>
 
 
 ## Endpoint Locales
