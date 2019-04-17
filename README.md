@@ -178,7 +178,7 @@ Returns all competing Overwatch League teams.
 |`game`                 | String | The String representation of the game being played. Example: <br><br><pre lang="json">"game": "OVERWATCH"</pre> |
 |`logo`  | String | A URL leading to the Overwatch League Logo. Example: <br><br><pre lang="json">"logo": "https://bnetcmsus-a.akamaihd.net/cms/page_media/JEUWQ6CN33BR1507857496436.svg"</pre>
 |`competitorType` | String| Describes the type of Competitors competing in the Overwatch League. Example:<br><br><pre lang="json">"competitorType": "TEAM"</pre>
-| `owl_division` | Array of Division Object | The Divisions making up the Overwatch League. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
+| `owl_division` | Array of Division Objects | The Divisions making up the Overwatch League. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string": "owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 
 ### GET /v2/teams/:id
 Returns information for a single Overwatch League Team given a [Team ID](#team-ids). For exmaple, to retrieve information about Boston Uprising we can add Boston Uprising's ID at the end of the URL:
@@ -224,7 +224,7 @@ Returns an Array of Competitors ordered by placement in the Overwatch League.
 |:--------------------|:------|:------------|
 |`owl_divisions`|Array of Division Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 |`playoff_separators`|Array of Int64| An Array of Integers indicating the stages for the current season of the Overwatch League Playoffs|
-|`season`|Array of Competitor Objects|A season is comprised of Competitors organized in Divisions. This will return two groups of Competitor arrays inside a parent Division object.|
+|`season`|Array of [Competitor](/objects/Competitor.md) Objects|A season is comprised of Competitors organized in Divisions. This will return two groups of Competitor arrays inside a parent Division object.|
 |`ranks`|Array of Competitor Objects|An Array of Competitors sorted by current standinds in the Overwatch League. Comparison values include match differentials, match game differentials, game head to head differentials, match head to head differentials, and advantage.
 
 
@@ -241,7 +241,7 @@ Returns a single Overwatch League Player when given the Player's ID.
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`|Int64|A unique integer identifier for an Overwatch League Player|
-|`availableLanguages`|Array of Strings object|An array of language abbreviations indicating the avaliable languas for player information.|
+|`availableLanguages`|Array of Strings Objects|An array of language abbreviations indicating the avaliable languas for player information.|
 |`handle`|String|The name of the Player's Battle.net account.|
 |`name`|String|The Player's Overwatch username.|
 |`homeLocation`|String|The Player's hometown.|
@@ -271,11 +271,11 @@ Returns information about a single Overwatch League Match given a Match ID.
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`|Int64|The unique Integer identifier for a singel Overwatch League Match|
-|`competitors`|Array of Competitor Objects|An Array containing the information of two competitng teams for an Overwatch League Match.|
+|`competitors`|Array of [Competitor](objects/Competitor.md) Objects|An Array containing the information of two competitng teams for an Overwatch League Match.|
 |`scores`|Array of Int64|An array containing the currents scores for two Overwatch League Competitors respectively.|
 |`conclusionValue`|Int64|The number of games for a single Overwatch League Match|
 |`conclusionStrategy`|String|A string representation of an Overwatch League Match conclusion.|
-|`winner`|Competitor Object|A Competitor object representing the winning team in an Overwatch League Match.|
+|`winner`|[Competitor](objects/Competitor.md) Object|A Competitor object representing the winning team in an Overwatch League Match.|
 |`home`|String|A string indicating the home location of a match.|
 |`bracket`|Bracket Object|A Bracket Object which denotes the tournament infornation and stage information.|
 
@@ -285,8 +285,8 @@ Returns information regarding an ongoing live match.
 ### Live Match Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-|`liveMatch`|Live Object| A Live object with information about the current match.|
-|`nextMatch`|Live Object| A Live object with information about the next match.|
+|`liveMatch`|[Live Match](objects/LiveMatch.mb) Object| A Live Match object with information about the current match.|
+|`nextMatch`|[Next Match](objects/NextMatch.mb) Object| A Next Match object with information about the next match.|
 
 ### GET /schedule
 Returns the schedule for the current Overwatch League season.
@@ -356,4 +356,5 @@ Returns Overwatch League news nformation.
 |`pageSize`|Int64|The number of blog posts per page.|
 |`page`|Int64|The current page of blogs as seen on https://overwatchleague.com|
 |`totalPages`|Int64|The total number of blog post pages available on https://overwatchleague.com|
-|`blogs`|Array of Blog Objects|A lists of blog posts on a specified page.|
+|`blogs`|Array of [Blog](objects/Blog.md) Objects|A lists of blog posts on a specified page.|
+
