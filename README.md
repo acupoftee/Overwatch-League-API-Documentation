@@ -3,7 +3,7 @@
   </p>
 
  <h1 align=center> Overwatch League API Documentation </h1>
-<p align=center>An unofficial analysis of the Overwatch League API.</p>
+<p align=center>A community driven analysis of the Overwatch League API.</p>
 
 # Disclaimer
 The Overwatch League API is not officially supported by Blizzard, and is subject to change at any time. The documentation for the API is  developed by the community, and may or may not be complete. [Use at your own risk](https://i.imgur.com/Yr6WHNn.png).
