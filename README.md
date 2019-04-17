@@ -33,33 +33,33 @@ GET /
 # API Endpoints Overview
 Here are the endpoints used to access Overwatch League's information such as player information, match updates, league standings, news reports, and much more. This document will be going over these objects in more detail.
 
-```
-GET /login
-GET /auth/bnet/callback?code={code}
-GET /user
-GET /user/favorites
-GET /v2/teams
-GET /v2/teams/{id}
-GET /ranking
-GET /standings
-GET /players
-GET /players/{id}
-GET /matches
-GET /matches/{id}
-GET /live-match
-GET /schedule
-GET /streams
-GET /vods
-GET /maps
-GET /news
-GET /playlist/owl-app-playlist
-GET /about
 
-POST /user/favorites
-POST /user/favorites/order
+GET /login <br>
+GET /auth/bnet/callback?code={code}<br>
+GET /user<br>
+GET /user/favorites<br>
+GET /v2/teams<br>
+GET /v2/teams/{id}<br>
+GET /ranking<br>
+GET /standings<br>
+GET /players<br>
+GET /players/{id}<br>
+GET /matches<br>
+GET /matches/{id}<br>
+GET /live-match<br>
+GET /schedule<br>
+GET /streams<br>
+GET /vods<br>
+GET /maps<br>
+GET /news<br>
+GET /playlist/owl-app-playlist<br>
+GET /about<br>
 
-DELETE /user/favorites/{id}
-```
+POST /user/favorites<br>
+POST /user/favorites/order<br>
+
+DELETE /user/favorites/{id}<br>
+
 
 ## Endpoint Locales
 Reponses can be returned in several locales (a language and region identidier). The data will then be returned in the specified language.
