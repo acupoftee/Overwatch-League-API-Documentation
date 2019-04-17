@@ -2,6 +2,20 @@
 A bracket represents a series of games played during an Overwatch League match usually leading to a single winner.
 
 ## Bracket Data Dictionary
+| Attribute           | Type  | Description |
+|:--------------------|:------|:------------|
+|`id`|Int64|The Integer identifier of a Bracket.|
+|`matchConclusionValue`|Int64|The maximum number of games in an Overwatch League match.|
+|`matchConclusionStrategy`|String|The strategy used to clonclude an Overwatch League match.|
+|`winners`|Int64|The number of winners in a single Bracket.|
+|`teamSize`|Int64|The required team size for an Overwatch League Match.|
+|`repeatableMatchUps`|Int64|The number of repeated match ups in a Bracket|
+|`stage`|Stage Object|An object describing the current Stage for a Bracket.|
+|`type`|String|Denotes the type of match in a Bracket.|
+|`advantageComparing`|String|The moment in a match where Competitor advantages are evaluated.|
+|`thirdPlaceMatch`|Boolean|A boolean indicating whether or not a third place match will take place.|
+|`allowDraw`|Boolean|A boolean indicating whether or not a draw is allowed.|
+
 
 ## Sample Bracket JSON
 ```json
