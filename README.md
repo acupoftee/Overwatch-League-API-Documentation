@@ -225,7 +225,7 @@ Returns an Array of Competitors ordered by placement in the Overwatch League.
 |`owl_divisions`|Array of Division Object| Contains all the divisions for the current Overwatch League Season. Example:<br><br><pre lang="json">owl_divisions": [<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "79",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.atlantic",<br>&emsp;&emsp;&emsp;"name": "Atlantic Division",<br>&emsp;&emsp;&emsp;"abbrev": "ATL"<br>&thinsp;},<br>&thinsp;{<br>&emsp;&emsp;&emsp;"id": "80",<br>&emsp;&emsp;&emsp;"string":&emsp;"owl.teams.divisions.pacific",<br>&emsp;&emsp;&emsp;"name": "Pacific Division",<br>&emsp;&emsp;&emsp;"abbrev": "PAC"<br>&thinsp;}<br>]</pre>
 |`playoff_separators`|Array of Int64| An Array of Integers indicating the stages for the current season of the Overwatch League Playoffs|
 |`season`|Array of [Competitor](/objects/Competitor.md) Objects|A season is comprised of Competitors organized in Divisions. This will return two groups of Competitor arrays inside a parent Division object.|
-|`ranks`|Array of Competitor Objects|An Array of Competitors sorted by current standinds in the Overwatch League. Comparison values include match differentials, match game differentials, game head to head differentials, match head to head differentials, and advantage.
+|`ranks`|Array of [Competitor](/objects/Competitor.md) Objects|An Array of Competitors sorted by current standinds in the Overwatch League. Comparison values include match differentials, match game differentials, game head to head differentials, match head to head differentials, and advantage.
 
 
 ## Player Endpoints
