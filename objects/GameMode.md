@@ -1,5 +1,5 @@
 # Game Mode
-
+A Game Mode defines the type of map played during an Overwatch League match. There are four modes available for players: Control, Escort, Assault, and Hybrid.
 ## Game Mode Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
