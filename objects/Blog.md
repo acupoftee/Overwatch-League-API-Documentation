@@ -12,7 +12,7 @@ A Blog is where articles pertaining to Overwatch League are located. Each Blog c
 |`author`|String|The author of a Blog.|
 |`locale`|String|The current locale of a Blog. The locale will change depending on the language you choose to view the main website.|
 |`keywords`|Array of Strings|A list of keywords for a Blog.|
-|`summary`|String|The current title of a Blog. The language of a summary changes depending on the locale.|
+|`summary`|String|The current summary of a Blog. The language of a summary changes depending on the locale.|
 |`commentKey`|String|A key denoting the primary language for a Blog's comments.|
 |`status`|String|The live status of a Blog.|
 |`thumbnail`|Object|An object denoting the properties of a Blog's thumbnail.|

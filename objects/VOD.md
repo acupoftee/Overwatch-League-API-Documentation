@@ -6,21 +6,15 @@ A VOD is an acronym short for Video On Demand. These are post recorded matches t
 |:--------------------|:------|:------------|
 |`unique_id`|String|The unique String identifier for a  VOD.|
 |`user_id`|Int64|An Integer identifier for a user interacting with a VOD.|
-|`publish`|Int64|An Integer representing the date and time a Blog was published.|
-|`title`|String|The current title of a Blog.|
-|`author`|String|The author of a Blog.|
-|`locale`|String|The current locale of a Blog. The locale will change depending on the language you choose to view the main website.|
-|`keywords`|Array of Strings|A list of keywords for a Blog.|
-|`summary`|String|The current title of a Blog. The language of a summary changes depending on the locale.|
-|`commentKey`|String|A key denoting the primary language for a Blog's comments.|
-|`status`|String|The live status of a Blog.|
-|`thumbnail`|Object|An object denoting the properties of a Blog's thumbnail.|
-|`defaultCommunity`|String|The default target community for a specific Blog.|
-|`defaultUrl`|String|The default URL for a Blog.|
-|`commentsEnabled`|Boolean|Indicates whether or not comments are enabled for a Blog.|
-|`pollAttached`|Boolean|Indicates whether or not polls are enabled for a Blog.|
-|`localizationPublish`|Int64|An Integer representing the date and time a localized Blog was published.|
-|`siteCategory`|String|The section of the Overwatch League website containing the Blog post.|
+|`organization_id`|String|A unique String identifier for the VOD organizers.|
+|`video_type`|String|The type of video listed on overwatchleague.com.|
+|`title`|String|The title of a VOD.|
+|`description`|String|The current description of a VOD. The language of a description changes depending on the locale.|
+|`length`|Int64|The Integer representing the length of a VOD.|
+|`status`|String|The status of a VOD upload. A status can be either "compelte" or "processing."|
+|`available`|Int64|The number of VODs available with the same content.|
+|`thumbnail`|String|A URL for the VOD thumbnail.|
+
 
 ## Sample VOD JSON
 ```json
