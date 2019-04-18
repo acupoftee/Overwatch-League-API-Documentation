@@ -4,7 +4,7 @@
 
 If you wish to contribute to the Overwatch League API documentation, feel free to fork the repository and submit a
 pull request. 
-
+-
 ## Setup
 To get ready to work on the documentation, please do the following:
 

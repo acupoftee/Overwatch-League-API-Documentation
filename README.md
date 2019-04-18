@@ -2,7 +2,7 @@
 <img src="tracer.png", width="50%">
   </p>
 
- <h1 align=center> Overwatch League API Documentation </h1>
+ <h1 align=center>Overwatch League API Community Documentation </h1>
 <p align=center>A community driven analysis of the Overwatch League API.
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
