@@ -14,6 +14,8 @@ The Overwatch League API is not officially supported by Blizzard, and is subject
 # Getting Started
 The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence. This API enables developers to have real time information about teams, players, match updates, and much more!
 
+<a href="https://discord.gg/PBwan6u">Join our Discord</a> or submit a PR if you want to contribute, ask questions, or share projects using the OWL API!
+
 ### The API is a RESTful Resource
 Overwatch League API endpoints conform to the design principles of Representational State Transfer (REST). This API uses the JSON data format for responses.
 
@@ -382,3 +384,9 @@ Returns Overwatch League news nformation.
 |`page`|Int64|The current page of blogs as seen on https://overwatchleague.com|
 |`totalPages`|Int64|The total number of blog post pages available on https://overwatchleague.com|
 |`blogs`|Array of [Blog](objects/Blog.md) Objects|A lists of blog posts on a specified page.|
+
+<hr>
+Thank you for reading! If you have anymore questions, <a href="https://discord.gg/PBwan6u">click here</a> to join our Discord server!<br><br>
+
+Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the documentation.
+See the <a href=".github/CONTRIBUTING.md">contribution guide</a> if you'd like to submit a PR.
