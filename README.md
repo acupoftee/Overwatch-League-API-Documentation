@@ -11,10 +11,15 @@
 # Disclaimer
 The Overwatch League API is not officially supported by Blizzard, and is subject to change at any time. The documentation for the API is  developed by the community, and may or may not be complete. [Use at your own risk](https://i.imgur.com/Yr6WHNn.png).
 
+# Contributing
+<a href="https://discord.gg/PBwan6u">Join our **Unofficial Discord Server**</a> you want to contribute, ask questions, or share projects using the OWL API!
+
+You can also create an issue or a PR. Before creating an issue,please ensure that it hasn't already been reported/suggested, and double-check the documentation.
+See the <a href=".github/Contributing.md">contribution guide</a> if you'd like to submit a PR.
+
 # Getting Started
 The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence. This API enables developers to have real time information about teams, players, match updates, and much more!
 
-<a href="https://discord.gg/PBwan6u">Join our Discord</a> or submit a PR if you want to contribute, ask questions, or share projects using the OWL API!
 
 ### The API is a RESTful Resource
 Overwatch League API endpoints conform to the design principles of Representational State Transfer (REST). This API uses the JSON data format for responses.
@@ -386,7 +391,4 @@ Returns Overwatch League news nformation.
 |`blogs`|Array of [Blog](objects/Blog.md) Objects|A lists of blog posts on a specified page.|
 
 <hr>
-Thank you for reading! If you have anymore questions, <a href="https://discord.gg/PBwan6u">click here</a> to join our Discord server!<br><br>
-
-Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the documentation.
-See the <a href=".github/Contributing.md">contribution guide</a> if you'd like to submit a PR.
+Thank you for reading! If you have anymore questions or want to share your work, <a href="https://discord.gg/PBwan6u">click here</a> to join the server if you haven't already!
