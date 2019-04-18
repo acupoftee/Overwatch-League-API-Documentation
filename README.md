@@ -3,7 +3,10 @@
   </p>
 
  <h1 align=center> Overwatch League API Documentation </h1>
-<p align=center>A community driven analysis of the Overwatch League API.</p>
+<p align=center>A community driven analysis of the Overwatch League API.
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+</p>
 
 # Disclaimer
 The Overwatch League API is not officially supported by Blizzard, and is subject to change at any time. The documentation for the API is  developed by the community, and may or may not be complete. [Use at your own risk](https://i.imgur.com/Yr6WHNn.png).
@@ -67,6 +70,21 @@ Here are the endpoints used to access Overwatch League's information such as pla
 ### Additonal Endpoints
 GET /playlist/owl-app-playlist<br>
 GET /about<br>
+
+### Objects
+* [Account](/objects/Account.md)
+* [Blog](objects/Blog.md)
+* [Bracket](objects/Bracket.md)
+* [Colors](objects/Colors.md)
+* [Competitor](objects/Competitor.md)
+* [Game](objects/Game.md)
+* [Game Mode](objects/GameMode.md)
+* [Live Match](objects/LiveMatch.md)
+* [Logo](objects/Logo.md)
+* [Match](objects/Match.md)
+* [Next Match](objects/NextMatch.md)
+* [Player](objects/Player.md)
+* [Records](objects/Records.md)
 
 
 ## Endpoint Locales
