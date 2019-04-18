@@ -14,7 +14,16 @@ A VOD is an acronym short for Video On Demand. These are post recorded matches t
 |`status`|String|The status of a VOD upload. A status can be either "compelte" or "processing."|
 |`available`|Int64|The number of VODs available with the same content.|
 |`thumbnail`|String|A URL for the VOD thumbnail.|
-
+|`video_thumbnail_id`|Int64|The unique Integer identifier for a VOD thumbnail.|
+|`recorded_at`|String|The data and time string representing when a VOD was recorded.|
+|`available_at`|String|The data and time string representing when a VOD became available on overwatchleague.com.|
+|`created_at`|String|The data and time string representing when a VOD was created.|
+|`updated_at`|String|The data and time string representing when a VOD was updated.|
+|`share_url`|String|A URL for the VOD.|
+|`thumbnails`|Array of Thumbnail Objects|A list of different thumbnails and their properties for a single VOD. |
+|`video_assets`|Array of Video Asset Objects|A list of different assets and their properties for a single VOD. |
+|`tag`|Array of Tags Objects|A list of different tags used to find a specific VOD. |
+|`embed`|String|A URL for an embedded VOD.|
 
 ## Sample VOD JSON
 ```json
