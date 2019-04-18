@@ -389,4 +389,4 @@ Returns Overwatch League news nformation.
 Thank you for reading! If you have anymore questions, <a href="https://discord.gg/PBwan6u">click here</a> to join our Discord server!<br><br>
 
 Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the documentation.
-See the <a href=".github/CONTRIBUTING.md">contribution guide</a> if you'd like to submit a PR.
+See the <a href=".github/Contributing.md">contribution guide</a> if you'd like to submit a PR.
