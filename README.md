@@ -43,7 +43,7 @@ GET /
 # API Endpoints Overview
 Here are the endpoints used to access Overwatch League's information such as player information, match updates, league standings, news reports, and much more. This document will be going over these objects in more detail.
 
-## Table of Contents
+## Endoints and Objects
 
 ### User Endpoints
 [GET /login](#get-login) <br>
