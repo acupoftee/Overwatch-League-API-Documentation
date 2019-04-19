@@ -274,7 +274,7 @@ Returns a single Overwatch League Player when given the Player's ID.
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`|Int64|A unique integer identifier for an Overwatch League Player.  Example: <br><br><pre lang="json">"id": 3380</pre>|
-|`availableLanguages`|Array of Strings Objects|An array of language abbreviations indicating the avaliable languas for player information. Example: <br><br><pre lang="json"> "availableLanguages": [ <br>&emsp;&emsp;&emsp;"en"<br>]</pre>|
+|`availableLanguages`|Array of Strings Objects|An array of language abbreviations indicating the avaliable languas for player information. Example: <br><br><pre lang="json"> "availableLanguages": [ "en" ]</pre>|
 |`handle`|String|The name of the Player's Battle.net account. Example: <br><br><pre lang="json">"handle": "taimou.6010"</pre>|
 |`name`|String|The Player's Overwatch username. Example: <br><br><pre lang="json">"name": "Taimou"</pre>|
 |`homeLocation`|String|The Player's hometown. Example: <br><br><pre lang="json">"homeLocation": "Juankoski"</pre>|
