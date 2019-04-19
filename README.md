@@ -3,7 +3,7 @@
   </p>
 
  <h1 align=center>Overwatch League API Community Documentation </h1>
-<p align=center>A community driven analysis of the Overwatch League API.
+<p align=center>A community analysis of the Overwatch League API.
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 </p>
