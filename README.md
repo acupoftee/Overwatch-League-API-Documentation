@@ -92,7 +92,7 @@ GET /about<br>
 * [Next Match](objects/NextMatch.md)
 * [Player](objects/Player.md)
 * [Records](objects/Records.md)
-
+* [VOD](objects/VOD.md)
 
 ## Endpoint Locales
 Reponses can be returned in several locales (a language and region identidier). The data will then be returned in the specified language.
