@@ -273,20 +273,20 @@ Returns a single Overwatch League Player when given the Player's ID.
 ### Player Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
-|`id`|Int64|A unique integer identifier for an Overwatch League Player|
-|`availableLanguages`|Array of Strings Objects|An array of language abbreviations indicating the avaliable languas for player information.|
-|`handle`|String|The name of the Player's Battle.net account.|
-|`name`|String|The Player's Overwatch username.|
-|`homeLocation`|String|The Player's hometown.|
-|`accounts`|Array of Account objects|An array containing all of the Player's social media accounts.|
-|`game`|String|The name of the game associated with the Player.|
+|`id`|Int64|A unique integer identifier for an Overwatch League Player.  Example: <br><br><pre lang="json">"id": 3380</pre>|
+|`availableLanguages`|Array of Strings Objects|An array of language abbreviations indicating the avaliable languas for player information. Example: <br><br><pre lang="json"> "availableLanguages": [ <br>&emsp;&emsp;&emsp;"en"<br>]</pre>|
+|`handle`|String|The name of the Player's Battle.net account. Example: <br><br><pre lang="json">"handle": "taimou.6010"</pre>|
+|`name`|String|The Player's Overwatch username. Example: <br><br><pre lang="json">"name": "Taimou"</pre>|
+|`homeLocation`|String|The Player's hometown. Example: <br><br><pre lang="json">"homeLocation": "Juankoski"</pre>|
+|`accounts`|Array of [Account](objects/Account.md) Objects|An array containing all of the Player's social media accounts.|
+|`game`|String|The name of the game associated with the Player. Example: <br><br><pre lang="json">"game": "OVERWATCH"</pre>|
 |`attributes`|Attribute Object|An Object containing information about a Player's most played heroes, player number, preferred slot, and role.|
 |`attributesVersion`|String|A String representation of the attribute version.|
-|`familyName`|String|The Player's last name.|
-|`givenName`|String|The Player's first name.|
-|`nationality`|String| A two letter abbrevition denoting the player's home country.|
-|`headshot`|String|A String represenation of a Player's headshot URL.|
-|`teams`|Array of Team objects|An array of the Player's teams|
+|`familyName`|String|The Player's last name. Example: <br><br><pre lang="json">"familyName": "Kettunen"</pre>|
+|`givenName`|String|The Player's first name. Example: <br><br><pre lang="json">"givenName": "Timo"</pre>|
+|`nationality`|String| A two letter abbrevition denoting the player's home country. Example: <br><br><pre lang="json">"nationality": "FI"</pre>|
+|`headshot`|String|A String represenation of a Player's headshot URL. Example: <br><br><pre lang="json">"headshot": "https://bnetcmsus-a.akamaihd.net/cms/gallery/DFRBV085AX601550194285520.png"</pre>|
+|`teams`|Array of [Competitor](objects/Competitor.md) Objects|An array of the Player's teams|
 |`stats`|Object|An object consisting of the Players average stats per 10 minutes(i.e.  eliminations, deaths, hero damage, healing, final blows), total time played in the Overwatch League, and top heroes.|
 |`statRank`|Object|An object consisting of the Players stat ranks. Ranked stats include stats per 10 minutes (i.e.  eliminations, deaths, hero damage, healing, final blows) and total time played in the Overwatch League.|
 |`team`|Object|An object consisting of the Player's Team information.
