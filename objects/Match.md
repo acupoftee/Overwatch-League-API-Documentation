@@ -1,18 +1,33 @@
 <img src="https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/fs/FSL62VB6TJAX1551920284158.jpg">
 
 # Match
+An Overwatch League Match consists of 4 games taking place in four different maps and game modes. Matches are normally determined with a "Best of" conclusion strategy. 
 
 ### Match Data Dictionary
 | Attribute           | Type  | Description |
 |:--------------------|:------|:------------|
 |`id`|Int64|The unique Integer identifier for a singel Overwatch League Match|
 |`competitors`|Array of Competitor Objects|An Array containing the information of two competitng teams for an Overwatch League Match.|
-|`scores`|Array of Int64|An array containing the currents scores for two Overwatch League Competitors respectively.|
-|`conclusionValue`|Int64|The number of games for a single Overwatch League Match|
-|`conclusionStrategy`|String|A string representation of an Overwatch League Match conclusion.|
+|`scores`|Array of Score Objects|An array of 2 Integers representing the current match scores of both Competitors respectively. Each Score object contains a single `value` property, with the current score for a Competitor.|
+|`conclusionValue`|Integer|An Integer denoting the conclusion value of a match. The conclusion value is the number of games to be played in a single Overwatch League match.|
+|`conclusionStrategy`|String|A conclusion strategy determines how a match is concluded. For example, a minimum conclusion strategy determines a winner after the minimum number of games has been played in a match.|
+|`state`|String|The current state of a Match.|
+|`status`|String|The current state of a Match.|
+|`game`|Array of Game Objects|A list of individual games taking place in a single Overwatch League match. Each game takes place on a different map.|
 |`winner`|Competitor Object|A Competitor object representing the winning team in an Overwatch League Match.|
-|`home`|String|A string indicating the home location of a match.|
+|`home`|String|A string indicating the home location of a Match.|
 |`bracket`|Bracket Object|A Bracket Object which denotes the tournament infornation and stage information.|
+|`dateCreated`|Int64|An Integer representing the date a Match was scheduled.|
+|`handle`|String|The current game handle for Overwatch League match.|
+|`competitorStatuses`|Array of Strings|A list of competitor statuses. A competitor status denotes whether or not a competitor is able to compete.|
+|`timeZone`|String|The current time zone used to display the start time of a Match on overwatchleague.com|
+|`actualStartDate`|Int64|An Integer representing the date and time a Match has started.|
+|`actualEndDate`|Int64|An Integer representing the date and time a Match has ended.|
+|`startDate`|Int64|An Integer representing the scheduled start date of a Match.|
+|`endDate`|Int64|An Integer representing the scheduled end date of a Match.|
+|`showStartDate`|Boolean|A Boolean indicating whether or not the match start date should be seen on overwatchleague.com.|
+|`showEndDate`|Boolean|A Boolean indicating whether or not the match end date should be seen on overwatchleague.com.|
+|`rankings`|Array of Player Objects|An array of Players sorted by stat rankings. Players are sorted in descending order.|
 
 ## Sample Match JSON
 ```json
