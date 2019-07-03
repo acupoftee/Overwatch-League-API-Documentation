@@ -184,7 +184,7 @@ Below is a table of all team IDs for retrieving information for specific teams:
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/gallery/2YF5VLIMGZVA1546557680222.png" height="20"> Houston Outlaws | 4525 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/NW461AQIYQMK1508792363133.png" height="20"> London Spitfire | 4410 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/3AEMOZZL76PF1508792362892.PNG" height="20"> Los Angeles Gladiators | 4406 |
-| <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/0D8BNUWVZP6B1508792362890.PNG" height="20"> Los Angleles Valiant | 4405 |
+| <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/0D8BNUWVZP6B1508792362890.PNG" height="20"> Los Angeles Valiant | 4405 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/9r/9RYLM8FICLJ01508818792450.png" height="20"> New York Excelsior | 4403 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/qm/QM7JE0THABVT1542674071412.png" height="20"> Paris Eternal | 7694 |
 | <img src="https://bnetcmsus-a.akamaihd.net/cms/page_media/3JZTLCPH37QD1508792362853.png" height="20"> Philadelphia Fusion | 4524 |
