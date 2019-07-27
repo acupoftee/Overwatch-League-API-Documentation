@@ -17,6 +17,8 @@ The Overwatch League API is not officially supported by Blizzard, and is subject
 You can also create an issue or a PR. Before creating an issue,please ensure that it hasn't already been reported/suggested, and double-check the documentation.
 See the <a href=".github/Contributing.md">contribution guide</a> if you'd like to submit a PR.
 
+Let's get in touch on [Twitter](https://twitter.com/dustybuttongg) or Discord if you have any questions or comments!
+
 # Getting Started
 The Overwatch League is on a mission to celebrate fans and afford them opportunities to become champions through a professional esports ecosystem that embraces passion and rewards excellence. This API enables developers to have real time information about teams, players, match updates, and much more!
 
